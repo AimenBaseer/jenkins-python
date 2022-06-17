@@ -8,6 +8,11 @@ pipeline {
                 echo 'hello world'
             }
         }
+     stage('Run Scripts') { 
+            steps { 
+                sh 'python script.py'
+            }
+        }
 
    
     }
